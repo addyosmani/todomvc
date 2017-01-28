@@ -1678,6 +1678,9 @@
 		}, {
 			"name": "React + Alt",
 			"url": "examples/react-alt"
+		}, {
+			"name": "React + Redux",
+			"url": "examples/react-redux"
 		}],
 		"link_groups": [{
 			"heading": "Official Resources",
