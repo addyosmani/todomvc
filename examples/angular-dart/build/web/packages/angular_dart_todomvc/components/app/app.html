@@ -1,0 +1,9 @@
+<section class="todoapp">
+    <todomvc-header></todomvc-header>
+    <section class="main" *ngIf="hasItems">
+        <todomvc-checkall></todomvc-checkall>
+        <router-outlet></router-outlet>
+    </section>
+    <todomvc-footer></todomvc-footer>
+</section>
+<footer-info></footer-info>

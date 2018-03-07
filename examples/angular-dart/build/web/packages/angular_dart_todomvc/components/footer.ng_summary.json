@@ -1,0 +1,95 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular_dart_todomvc/services/todos.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "TodoMvcFooter",
+        "5": [
+          {
+            "1": "TodosStore",
+            "4": "_todos"
+          }
+        ],
+        "7": [
+          {
+            "2": "ROUTER_DIRECTIVES"
+          }
+        ]
+      }
+    ],
+    "6": "footer.dart"
+  },
+  "type": {
+    "TodoMvcFooter": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "todomvc-footer",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "TodoMvcFooter",
+        "moduleUrl": "asset:angular_dart_todomvc/lib/components/footer.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "TodosStore",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<footer class=\"footer\">\n    <span class=\"todo-count\"><strong>{{remaining}}</strong> {{remainingTxt}}</span>\n    <ul class=\"filters\">\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<a [routerLink]=\"['TodoAll']\">All</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<a [routerLink]=\"['TodoActive']\">Active</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<a [routerLink]=\"['TodoCompleted']\">Completed</a>\n\t\t\t\t\t</li>\n\t\t</ul>\n    <button class=\"clear-completed\" (click)=\"clearCompleted()\" *ngIf=\"completed > 0\">Clear completed</button>\n</footer>\n    ",
+        "templateUrl": "asset:angular_dart_todomvc/lib/components/footer.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
